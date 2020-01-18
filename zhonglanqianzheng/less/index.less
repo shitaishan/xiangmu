@@ -1,0 +1,305 @@
+// 我们的成绩
+.index-row {
+	padding: 50px 0px;
+	.main-title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.line {
+		border-top: 1px solid #0ba1e4;
+		margin: 30px auto 26px;
+		border-width: 2px;
+		width: 80px;
+	}
+	.our-data-item {
+		text-align: center;
+	}
+	.number-wrapper {
+		color: #0ba1e4;
+		font-size: 70px;
+		line-height: 100px;
+	}
+	.title {
+		color: #919191;
+	}
+}
+.our-whyus {
+	background-color: #e1e1e1;
+	.our-whyus-item {
+		text-align: center;
+		background-color: white;
+		border: 1px solid #c1c1c1;
+		.title {
+			color: black;
+			line-height: 1.5em;
+		}
+		.glyphicon {
+			color: #0ba1e4;
+			font-size: 80px;
+			line-height: 1.5em;
+		}
+		p {
+			padding: 0px 10px;
+			line-height: 1.5em;
+		}
+		&:hover {
+			color: white;
+			background-color: #0ba1e4;
+			.glyphicon {
+				color: white;
+			}
+			.title {
+				color: white;
+			}
+		}
+	}
+}
+// 我们的服务
+@media screen and (max-width:768px){
+	.card-item:last-child {
+		margin-bottom: 50px;
+	}
+}
+.our-service {
+	.card-box {
+		padding: 20px 0px 60px;
+		.card-item {
+			float: left;
+			position: relative;
+			background-color: #fafafa;
+			border: 1px solid #c1c1c1;
+			.card-title {
+				padding: 20px 0px;
+				border-bottom: 1px solid #c1c1c1;
+				h4 {
+					line-height: 2em;
+					font-weight: bold;
+					color: #0ba1e4;
+				}
+			}
+			.card-content {
+				padding: 20px 0px 30px;
+				p {
+					line-height: 3em;
+				}
+				.btn {
+					color: #0ba1e4;
+					padding: 3px 20px;
+					background: transparent;
+					border: 1px solid #0ba1e4;
+					transition: all 0.5s ease-in-out;
+				}
+			}
+		}
+		.card-active {
+			transition: all 0.5s ease-in-out;
+			background-color: #0ba1e4;
+			transform: scale(1.1,1.1);
+			z-index: 2;
+			color: white;
+			.card-content {
+				.btn {
+					color: white;
+					border: 1px solid white;
+				}
+			}
+			h4 {
+				color: white;
+			}
+		}
+	}
+	.btn-lg {
+		color: #0ba1e4;
+		padding: 3px 20px;
+		background: transparent;
+		border: 1px solid #0ba1e4;
+		&:hover {
+			color: white;
+			border: 1px solid white;
+			background-color: #0ba1e4;
+		}
+	}
+}
+// .card-box 
+// 客户的鼓励
+.our-example {
+	background-color: #f5f5f5;
+	.top-content {
+		z-index: 10;
+		width: 100%;
+		height: 190px;
+		max-width: 100%;
+		position: relative;
+		.our-example-popover {
+			height: 160px;
+			background-color: white;
+			border: 1px solid #34a263;
+		}
+		.arrow {
+			left: 50%;
+			bottom: -1px;
+			width: 0px;
+			height: 0px;
+			margin-left: -16.5px;
+			position: absolute;
+			border: 16px solid #34a263;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+		}
+		.arrow::after {
+			content: "";
+			left: 50%;
+			bottom: -14px;
+			width: 0px;
+			height: 0px;
+			margin-left: -15px;
+			position: absolute;
+			border: 15px solid white;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-bottom-color: transparent;
+		}
+		img {
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			position: absolute;
+			margin-left: -25px;
+			top: -26px;
+			left:50%;
+		}
+		.popover-content {
+			margin: 9% 0 0;
+		}
+		.popover-content-tag {
+			width: 91%;
+			bottom: 42px;
+			font-size: 12px;
+			position: absolute;
+			>span {
+				float: left;
+				color: white;
+				max-width: 50%;
+				padding: 0.5% 3.5%;
+				background-color: #aaa;
+			}
+			.position-address {
+				color: #aaa;
+				float: right;
+				max-width: 50%;
+				figure {
+					width: 10px;
+					height: 10px;
+					float: left;
+					position: relative;
+					margin: 3px 4px 0px 0px;
+					.icon-dingweitubiao:before {
+					  content: "\e676";
+					  font-size: 13px;
+					  position: absolute;
+					  top: -2px;
+					  left: -1px;
+					}
+				}
+			}
+		}
+	}
+	.glly-icon {
+		width: 70px;
+		height: 70px;
+		margin: auto;
+		color: #34a263;
+		font-size: 80px;
+		font-weight: bold;
+		text-align: center;
+		border-radius: 100%;
+		border: 1px solid #34a263;
+	}
+}
+// 最新资讯
+.our-news-item {
+	padding: 20px 10px;
+	.media-left {
+		img {
+			padding: 4px;
+			width: 140px;
+			height: 110px;
+			border-radius: 5px;
+			border: 1px solid lightgray;
+		}
+	}
+	.media-body {
+		padding: 5px 0px;
+		a {
+			h4 {
+				height: 19px;
+				color: #0ba1e4;
+				overflow: hidden;
+				margin-bottom: 4px;
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+				word-wrap: break-word;
+				text-overflow: ellipsis;
+			}
+			&:hover {
+				text-decoration: none;
+				h4 {
+					font-weight: bold;
+					transition: all 0.5s;
+				}
+			}
+		}
+		.dynamic-li {
+			color: #999;
+			padding: 2px 0px;
+			font-size: 12px;
+			a {
+				color: #999;
+				float: right;
+				font-weight: 400;
+				margin-right: 10px;
+				display: block;
+				&:hover {
+					color: orange;
+				}
+			}
+		}
+		p {
+			height: 3em;
+			color: #919191;
+			font-size: 12px;
+			overflow: hidden;
+			line-height: 1.5em;
+			display: -webkit-box;
+			-webkit-line-clamp: 2;
+			word-wrap: break-word;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+		}
+	}
+}
+.our-news-more {
+	text-align: center;
+}
+// 我们的客户
+.our-client {
+	background-color: #e1e1e1;
+	.our-client-logo {
+		transition: all 0.5s ease-in-out;
+		border: 1px solid #c1c1c1;
+		margin: 20px auto;
+		overflow: hidden;
+		img {
+			-webkit-filter: grayscale(100%);
+			&:hover {
+				-webkit-filter: grayscale(0);
+			}
+		}
+		&:hover {
+			border: 1px solid #0ba1e4;
+			background-color: white;
+		}
+	}
+}

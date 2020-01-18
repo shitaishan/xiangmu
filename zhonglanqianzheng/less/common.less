@@ -1,0 +1,357 @@
+// 公共区域
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/* 导航 */
+#header .navbar {
+	border: 0;
+	border-bottom: 2px solid #0ba1e4;
+	background-color: white;
+}
+#header {
+	.nav {
+		li {
+			position: relative;
+			a {
+				padding-bottom: 4px;
+				font-size: 16px;
+				&:hover {
+					color: #0ba1e4;
+				}
+			}
+		}
+		.active {
+			a {
+				color: #0ba1e4;
+				background-color: white;
+			}
+		}
+	}
+}
+#header .nav .active {
+	.line-top {
+		border-top: 1px solid #0ba1e4;
+		width: 18px;
+		margin: auto;
+	}
+	a {
+		color: #0ba1e4;
+		background-color: white;
+	}
+}
+@media screen and (min-width:992px) {
+	.container {
+		width: 970px;
+	}
+}
+@media screen and (min-width:768px) {
+	#header .navbar {
+		padding: 10px 0px;
+	}
+}
+@media screen and (max-width:768px) {
+	#header .navbar-fixed-top {
+		position: relative;
+		margin-bottom: 0px;
+	}
+	#header .nav .active {
+		.line-top {
+			border-top: 0px;
+			width: 18px;
+			margin: auto;
+		}
+		a {
+			color: #0ba1e4;
+			background-color: white;
+		}
+	}
+}
+// 立即咨询
+.contact-banner {
+	overflow: hidden;
+	position: relative;
+	background: linear-gradient(to bottom,#0076d1,#5db8ff);
+	.waves {
+		width: 1888.6px;
+		height: 257px;
+		position: absolute;
+	}
+	.container {
+		.contact-banner-box {
+			margin: 30px 0px 40px;
+			text-align: center;
+			h1 {
+				color: white;
+				margin: 0 auto;
+				max-width: 10em;
+				line-height: 2em;
+				border-bottom: 2px solid white;
+			}
+			h4 {
+				color: white;
+			}
+			a {
+				color: white;
+				font-size: 24px;
+				margin-top: 20px;
+				padding: 8px 30px;
+				border-color: white;
+				background: transparent;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+	}
+}
+// 通用页脚
+#footer {
+	background-color: #363636;
+	.footer-item {
+		height: 160px;
+		margin: 40px 0px;
+		padding-left: 1em;
+		border-left: 2px solid #c1c1c1;
+		h4 {
+			color: white;
+		}
+		ul {
+			margin: 25px 0px 0px;
+			a {
+				color: white;
+				line-height: 2.5em;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		p {
+			color: white;
+			text-align: center;
+			line-height: 2.5em;
+		}
+		h2 {
+			color: white;
+			margin: 14px 0px;
+			img {
+				width: 40px;
+				height: 40px;
+				margin: -6px 10px 0px 0px;
+			}
+		}
+	}
+}
+#copyright {
+	background-color: #666;
+	p {
+		color: white;
+		margin: 10px;
+		line-height: 40px;
+		text-align: center;
+		a {
+			color: white;
+		}
+	}
+	.col-sm-12 {
+		div {
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px 0px;
+			text-align: center;
+			a {
+				height: 20px;
+				line-height: 20px;
+				display: inline-block;
+				text-decoration: none;
+				img {
+					float: left;
+				}
+			}
+		}
+	}
+}
+// 返回顶部滑动 
+#clan-slider {
+	right: 1px;
+	bottom: 30%;
+	z-index: 1100;
+	position: fixed;
+	ul {
+		margin-top: -2px;
+		li {
+			width: 48px;
+			height: 48px;
+			margin-top: 2px;
+			position: relative;
+			border: 1px solid #0ba1e4;
+			background-color: #f5f5f5;
+			a {
+				width: 48px;
+				height: 48px;
+				overflow: hidden;
+				display: inline-block;
+				background: url(../img/clan-slider.png) no-repeat;
+			}
+			#slider-chat {
+				background-position: 0px -92px;
+			}
+			#slider-qq {
+				background-position: 0px -138px;
+			}
+			#slider-phone {
+				background-position: 0px -184px;
+			}
+			#slider-wechat {
+				background-position: 0px -230px;
+			}
+			#slider-goTop {
+				background-position: 0px 0px;
+			}
+			.clan-slider-tips {
+				top: -1px;
+				right: 46px;
+				height: 48px;
+				color: white;
+				font-size: 18px;
+				line-height: 48px;
+				text-align: center;
+				position: absolute;
+				white-space: nowrap;
+				padding: 0px 2px 0px 10px;
+				border: 1px solid #0ba1e4;
+				background-color: #0ba1e4;
+			}
+			p {
+				display: none;
+			}
+			&:hover {
+				background-color: #0ba1e4;
+				p {
+					display: block;
+				}
+				#slider-chat {
+					background-position: -48px -92px;
+				}
+				#slider-qq {
+					background-position: -48px -138px;
+				}
+				#slider-phone {
+					background-position: -48px -184px;
+				}
+				#slider-wechat {
+					background-position: -48px -230px;
+				}
+				#slider-goTop {
+					background-position: -48px 0px;
+				}
+			}
+			img {
+				right: 48px;
+				bottom: 0px;
+				width: 196px;
+				height: 196px;
+				position: absolute;
+			}
+		}
+	}
+}
+// 请您留言
+#nb-nodeboard {
+	left: 1px;
+	bottom: 1px;
+	position: fixed;
+	height: 420px;
+	width: 240px;
+	overflow: hidden;
+	border-radius: 5px;
+	z-index: 1100;
+	background-color: #ededed;
+	div {
+		font-size: 12px;
+	}
+	.nb-head {
+		height: 35px;
+		line-height: 35px;
+		background-color: #00aef3;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		h5 {
+			float: left;
+			color: white;
+			margin-left: 12px;
+		}
+		.nb-head-close {
+			width: 34px;
+			height: 30px;
+			float: right;
+			margin-top: 2px;
+			cursor: pointer;
+			// background: url(../img/nodeMin.png) no-repeat;
+		}
+	}
+	.nb-nodeboard-text {
+		zoom: 1;
+		padding: 12px 0px;
+		border-bottom: 1px solid #d5d5d5;
+		p {
+			line-height: 18px;
+			margin: 0px 8px 0px 9px;
+		}
+		.nb-nodeboard-company {
+			color: #666;
+			font-size: 14px;
+		}
+		.nb-nodeboard-link {
+			color: #999;
+		}
+	}
+	form {
+		.nb-nodeboard-content {
+			width: 222px;
+			margin: 7px auto 0px;
+			textarea {
+				width: 222px;
+				height: 80px;
+				resize: none;
+				padding: 0px 4px;
+				overflow: hidden;
+				margin: 12px auto 7px;
+				border: 1px solid #d5d5d5;
+			}
+		}
+		.nb-nodeboard-name {
+			z-index: 4;
+			height: 30px;
+			width: 221px;
+			line-height: 30px;
+			margin: 7px auto 0px;
+			background-color: white;
+			.nodeName {
+				width: 35px;
+				height: 30px;
+				text-align: center;
+				vertical-align: top;
+				display: inline-block;
+				background: url(../img/user.png) no-repeat 9px center;
+			}
+			input {
+				border: 0px;
+				width: 140px;
+				height: 30px;
+				line-height: 30px;
+			}
+		}
+	}
+	.nb-nodeboard-send-btn {
+		width: 90px;
+		height: 35px;
+		color: white;
+		cursor: pointer;
+		font-size: 14px;
+		line-height: 35px;
+		text-align: center;
+		border-radius: 2px;
+		margin: 12px auto 18px 10px;
+		background-color: #00aef3;
+	}
+}
