@@ -1,0 +1,56 @@
+// 公共区域
+* {
+	padding: 0px;
+	margin: 0px;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #f1f2f6;
+}
+// 头部区域
+.header {
+	width: 100%;
+	background: url(../img/aboutxiaoniao/beader_bg.jpg) no-repeat top center;
+	.content {
+		height: 50px;
+		width: 1100px;
+		margin: 0 auto;
+		img {
+			float: left;
+		}
+		ul {
+			width: 930px;
+			height: 25px;
+			float: right;
+			margin: 0 auto;
+			line-height: 25px;
+			padding-top: 11px;
+			li {
+				float: left;
+				position: relative;
+				a {
+					height: 30px;
+					color: #aeabb4;
+					padding: 0 15px;
+					font-size: 16px;
+					position: relative;
+					display: inline-block;
+					&:hover {
+						color: white;
+						transition: all 0.3s;
+						background: url(../img/nav_now_bg.png) no-repeat bottom center;
+					}
+				}
+			}
+			.now {
+				a {
+					color: white;
+					background: url(../img/nav_now_bg.png) no-repeat bottom center;
+				}
+			}
+		}
+	}
+}

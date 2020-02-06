@@ -1,0 +1,140 @@
+// 文章详情
+.content {
+	width: 780px;
+	margin: 0px auto;
+	background-color: white;
+	padding: 70px 160px 220px 160px;
+	h1,h2 {
+		text-align: center;
+		color: #311759;
+	}
+	h1 {
+		font-size: 54px;
+		line-height: 60px;
+	}
+	h2 {
+		font-size: 18px;
+		font-weight: 400;
+		letter-spacing: 6px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	>img {
+		margin: 0px auto;
+		margin-top: 15px;
+		display: block;
+	}
+	h3 {
+		height: 60px;
+		color: #311759;
+		font-size: 30px;
+		margin-top: 70px;
+		position: relative;
+		background: url(../img/pen_line_long.png) no-repeat -320px 58px;
+		span:last-child {
+			width: 61px;
+			height: 58px;
+			cursor: pointer;
+			background: url(../img/pen_article.png);
+			position: absolute;
+			right: 0px;
+			top: 7px;
+			&:hover {
+				background: url(../img/pen_article.png) no-repeat -61px 0;
+			}
+		}
+	}
+	.auther {
+		color: #6b6a6f;
+		padding: 15px 0px 60px;
+		span {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	}
+	.content-article {
+		img {
+			margin-bottom: 35px;
+		}
+		p {
+			margin-bottom: 23px;
+			line-height: 22px;
+		}
+		.titles {
+			font-size: 22px;
+		}
+	}
+	.like-btn-wrap {
+		margin: 80px 0px 0px 350px;
+		overflow: hidden;
+		height: 73px;
+		width: 73px;
+		&:hover {
+			width: 213px;
+			transition: all 0.5s;
+			.like-btn {
+				animation: Radius 0.3s;
+			}
+		}
+		.like-showbox {
+			width: 220px;
+			.like-btn {
+				float: left;
+				width: 73px;
+				height: 73px;
+				cursor: pointer;
+				background: url(../img/article_iflike.png) no-repeat 0px 0px;
+			}
+			.like-nomber {
+				float: left;
+				color: white;
+				width: 135px;
+				height: 35px;
+				text-align: center;
+				padding: 8px 0px 0px 5px;
+				margin: 19px 0px 0px 5px;
+				background: url(../img/article_iflike_nomberbg.png) no-repeat;
+			}
+			.like-btn-clicked {
+				background: url(../img/article_iflike.png) no-repeat 0px -73px;
+			}
+		}
+	}
+	.like-tips-wrap {
+		position: relative;
+		margin-top: 54px;
+		.like-tips {
+			padding: 27px 10px;
+			background-color: #f1f2f6;
+			border-radius: 5px;
+			position: absolute;
+			text-align: center;
+			font-size: 24px;
+			color: #311859;
+			left: 298px;
+			top: 370px;
+			opacity: 0;
+		}
+	}
+}
+@keyframes Radius {
+	0% {
+		transform: scale(1,1);
+	}
+	20% {
+		transform: scale(1.2,0.8);
+	}
+	40% {
+		transform: scale(1.1,0.9);
+	}
+	60% {
+		transform: scale(1.05,0.95);
+	}
+	80% {
+		transform: scale(1,1);
+	}
+	90% {
+		transform: scale(1.05,0.95);
+	}
+	100% {
+		transform: scale(1,1);
+	}
+}
