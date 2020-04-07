@@ -1,0 +1,79 @@
+.page{
+  margin-bottom: 3rem;
+}
+.home-header{
+  width: 100%;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  background:green;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.home-header .title{
+  flex: 6;
+  color: white;
+}
+.home-header a{
+  flex: 1;
+  display: block;
+  width: 15%;
+  font-size: 0.37rem;
+  line-height: 2.3rem;
+  color: #fff;
+}
+.swiper-container{
+  margin-top: 2.3rem;
+}
+.swiper-container img{
+  width: 100%;
+}
+
+
+.home-product-list ul{
+display: flex;
+width: 100%;
+flex-wrap: wrap;}
+.home-product-list ul li{
+width: 45%;
+margin: 2%;
+border: 1px solid #999;
+padding: 5px 0 2px;
+text-align: center;
+}
+.home-product-list ul li img{
+width: 90%;
+}
+.home-product-list ul li h3,p{
+text-align: left;
+margin-left: 10px;
+}
+.home-product-list ul li h3{
+font-size: 0.37rem;
+color: black;
+margin-bottom: 5px;
+}
+.home-product-list ul li .price{
+display: flex;}
+.home-product-list ul li .price p{
+flex: 1;
+font-size: 0.4rem;
+color: #ec5151;}
+.home-product-list ul li .price p::before{
+content: "￥"
+}
+.home-product-list ul li .price p:last-child{
+color: #999;
+text-decoration: line-through;
+}
+
+.home-product-list ul li .info{
+display: flex;}
+.home-product-list ul li .info p{
+flex: 1;
+font-size: 0.4rem;
+color: #999;
+}

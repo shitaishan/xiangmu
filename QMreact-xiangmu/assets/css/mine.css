@@ -1,0 +1,88 @@
+.mine-logo{
+    margin-top: 2.2rem;
+    height: 7rem;
+    background: green;
+    padding-top: 1.6rem;
+}
+.mine-logo .img{
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+.mine-logo .img img{
+    height: 100%;
+}
+.mine-logo p{
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;
+}
+.info .list{
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding:0 20px;
+    font-size: 16px;
+    border-bottom: 1px solid #999;
+    display: flex;
+}
+.info .list p{
+    flex: 1;
+}
+.info .list i{
+    flex: 1;
+    text-align: right;
+    font-style: normal;
+        color: #999;
+}
+.info .lists{
+    display: flex;
+    color: #999;
+}
+.info .lists .item{
+    flex: 1;
+    padding: 15px;
+    font-size: 0.43rem;
+    text-align: center;
+}
+.info .lists .item i{
+    display: block;
+}
+.info .lists .item  p{
+    margin-top: 10px;
+    font-size: 0.38rem;
+}
+.info .lists .item  p span{
+    color: red;
+}
+
+
+.page{
+    margin-bottom: 3rem;
+  }
+  .header{
+    width: 100%;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    background:green;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+  }
+  .header .title{
+    flex: 6;
+    color: white;
+  }
+  .header a{
+    flex: 1;
+    display: block;
+    width: 15%;
+    font-size: 0.37rem;
+    line-height: 2.3rem;
+    color: #fff;
+  }
